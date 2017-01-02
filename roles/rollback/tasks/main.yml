@@ -1,0 +1,19 @@
+---
+
+- name: Remove php
+  package: name=php state=removed
+
+- name: Remove php-gd
+  package: name=php-gd state=removed
+
+- name: Remove mysql-server
+  package: name=mysql-server state=removed
+
+- name: Remove git
+  package: name=git state=removed
+
+- name: Remove python-mysqldb
+  package: name=python-mysqldb state=removed
+
+- name: Remove libapache2-mod-auth-mysql
+  package: name=libapache2-mod-auth-mysql state=removed

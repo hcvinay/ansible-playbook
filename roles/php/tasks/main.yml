@@ -1,0 +1,9 @@
+---
+
+- name: Install PHP and associated packages
+  package: name=php state=latest
+
+- name: Install PHP GD library
+  package: name=php-gd state=latest
+  notify:
+    - Restart Apache

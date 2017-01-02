@@ -1,0 +1,16 @@
+---
+
+- hosts: node1
+
+  become: true
+
+  vars:
+    db_name: drupal
+    db_user: drupal
+    db_password: drupal
+
+  roles:
+    - update
+    - php
+    - mysql
+    - drupal
