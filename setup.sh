@@ -42,7 +42,7 @@ echo "Installing Apache2,PHP,Mysql"
 echo "Installation through ansible playbook"
 echo "Playbook installs webserver and setups drupal"
 
-ansible-playbook /etc/ansible/webserver.yml
+ansible-playbook /etc/ansible/drupal.yml
 
 if [$? -ne 0 ]; then
     ansible-playbook /etc/ansible/roles/rollback/tasks/main.yml
