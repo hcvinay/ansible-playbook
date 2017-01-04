@@ -1,5 +1,11 @@
 ---
 
+- name: 1. install Apache
+  package: name=apache2 update_cache=yes state=latest
+
+- name: 2. Start Apache
+  service: name=apache2 state=running enabled=yes
+  
 - name: Install PHP and associated packages
   package: name=php state=latest
 
